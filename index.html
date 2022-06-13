@@ -25,20 +25,30 @@
     <header>
       <img src="assets\assets\logo.svg" alt="nft-landing-logo" />
       <div>
-        <div id="menu"></div>
-        <div id="menu"></div>
-        <div id="menu"></div>
+        <button id="hamburger-menu">
+          <nav id="sidebar-menu">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Launch</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </nav>
+        </button>
       </div>
     </header>
     <section class="section1">
       <div>
-        <h4 class="soon">LAUNCHING SOON</h4>
-        <h1>An NFT like no other</h1>
-        <p>
-          Don't miss out on the release of our new NFT.Sign up below to receive
-          updates when we go live
-        </p>
-        <button class="button">Sign Up</button>
+        <div id="text">
+          <h4 class="soon">LAUNCHING SOON</h4>
+          <h1>An NFT like no other</h1>
+          <p>
+            Don't miss out on the release of our new NFT.Sign up below to
+            receive updates when we go live
+          </p>
+          <button class="button">Sign Up</button>
+        </div>
       </div>
       <img class="graphic" src="assets\assets\graphic.svg" alt="graphic-foto" />
     </section>
@@ -46,7 +56,7 @@
       <h2>Free NFT for early birds</h2>
       <p>Sign up today and you'll get a free NFT when we launch.</p>
     </div>
-    <section class="ad-section">
+    <section>
       <div class="ad-logo">
         <div>
           <img src="assets\assets\companies\1.svg" alt="boomerang" />
@@ -57,11 +67,14 @@
           <img src="assets\assets\companies\5.svg" alt="droplet" />
         </div>
       </div>
-      <h2>LE Super Rare Auction</h2>
-      <p>
-        We have released four limited edition NFTs early which can be bid on via
-        <span style="border-bottom: 2px solid black"> OpenSea</span>
-      </p>
+      <div class="ad-section">
+        <h2>LE Super Rare Auction</h2>
+        <p>
+          We have released four limited edition NFTs early which can be bid on
+          via
+          <span style="border-bottom: 2px solid black"> OpenSea</span>
+        </p>
+      </div>
       <div class="card">
         <!-- First Card -->
         <div id="card">
@@ -70,7 +83,7 @@
           </div>
           <div class="card-body">
             <span>
-              <p>GLOOP SERIES</p>
+              <p style="color: orange">GLOOP SERIES</p>
               <h3><b>Purple Man</b></h3>
               <p>#12983</p>
             </span>
@@ -89,8 +102,8 @@
           </div>
           <div class="card-body">
             <span>
-              <p>GLOOP SERIES</p>
-              <h3><b>Purple Man</b></h3>
+              <p style="color: orange">GLOOP SERIES</p>
+              <h3><b>Beige</b></h3>
               <p>#12983</p>
             </span>
             <span>
@@ -108,8 +121,8 @@
           </div>
           <div class="card-body">
             <span>
-              <p>GLOOP SERIES</p>
-              <h3><b>Purple Man</b></h3>
+              <p style="color: orange">GLOOP SERIES</p>
+              <h3><b>Red Man</b></h3>
               <p>#12983</p>
             </span>
             <span>
@@ -127,8 +140,8 @@
           </div>
           <div class="card-body">
             <span>
-              <p>GLOOP SERIES</p>
-              <h3><b>Purple Man</b></h3>
+              <p style="color: orange">GLOOP SERIES</p>
+              <h3><b>Green</b></h3>
               <p>#12983</p>
             </span>
             <span>
@@ -146,7 +159,7 @@
         <h1>An NFT like no other</h1>
         <p>
           Don't miss out on the release of our new NFT.Sign up below to receive
-          updates when we go live
+          updates.
         </p>
         <button class="button">Sign Up</button>
       </div>
@@ -157,13 +170,47 @@
       />
     </section>
     <footer>
-      <div>
-        <img src="assets\assets\logo.svg" alt="NFT logo" />
-        <p>Exclusive NFT Collection</p>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
+      <div class="ending">
+        <div>
+          <img src="assets\assets\logo.svg" alt="NFT logo" />
+          <p>Exclusive NFT Collection</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="list">
+          <div class="left-side">
+            <ul>
+              <label for="About">ABOUT</label>
+              <li>About</li>
+              <li>Terms</li>
+              <li>Legal</li>
+            </ul>
+            <ul>
+              <label for="Contact">CONTACT</label>
+              <li>Press</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="right-side">
+            <ul>
+              <label for="NFT">NFT</label>
+              <li>OpenSea</li>
+              <li>Maker</li>
+              <li>Learn</li>
+            </ul>
+            <ul>
+              <label for="Social">SOCIAL</label>
+              <li>Twitter</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy-and">
+        <p>&copy Copyright 2022 NFTlanding</p>
+        <p id="launch">Launching August 2022</p>
       </div>
     </footer>
   </body>

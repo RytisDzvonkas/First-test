@@ -15,11 +15,23 @@ header {
           align-items: center;
 }
 
-#menu {
-  width: 35px;
-  height: 5px;
-  background-color: #818181;
-  margin: 6px 0;
+#hamburger-menu {
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7e7e7e), color-stop(20%, #7e7e7e), color-stop(20%, white), color-stop(40%, white), color-stop(40%, #7e7e7e), color-stop(60%, #7e7e7e), color-stop(60%, white), color-stop(80%, white), color-stop(80%, #7e7e7e), to(#7e7e7e));
+  background: linear-gradient(to bottom, #7e7e7e, #7e7e7e 20%, white 20%, white 40%, #7e7e7e 40%, #7e7e7e 60%, white 60%, white 80%, #7e7e7e 80%, #7e7e7e 100%);
+}
+
+#hamburger-menu #sidebar-menu {
+  position: fixed;
+  left: -250px;
+  padding: 0px 10px;
+}
+
+.graphic {
+  width: 100%;
 }
 
 .section1 {
@@ -49,9 +61,8 @@ header {
   background-color: transparent;
   padding: 1rem 2.8rem;
   border: 5px solid;
-  border-image-slice: 10;
-  border-radius: 100%;
-  border-image-source: url(assets/assets/background.svg);
+  border-radius: 50rem;
+  border-color: #c87d15;
 }
 
 .overlay {
@@ -137,6 +148,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 3rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -148,7 +160,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.5rem;
-  height: 5rem;
+  max-height: 5rem;
 }
 
 #card {
@@ -160,6 +172,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 2px solid lightgray;
 }
 
 .section2 h1 {
@@ -176,5 +189,60 @@ header {
 footer {
   padding: 1rem;
   font-size: 1.3rem;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 650px) {
+  #hamburger-menu {
+    display: inline;
+  }
+  .ad-logo {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .ad-logo div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3rem;
+  }
+  #launch {
+    color: black;
+  }
+  .card {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .ending {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .copy-and {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  #launch {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style2.css.map */
